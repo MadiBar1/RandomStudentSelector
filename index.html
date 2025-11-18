@@ -9,6 +9,14 @@
   <body
     class="flex flex-col items-center justify-center h-screen gap-4 bg-gray-400"
   >
+    <div class="flex gap-4">
+      <input type="radio" id="dark" name="theme" value="dark" />
+      <label for="dark" class="cursor-pointer">Dark Mode</label>
+      <input type="radio" id="light" name="theme" value="light" checked />
+      <label for="light" class="cursor-pointer">Light Mode</label>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
     <script type="module" src="/src/button.js"></script>
     <button
       class="bg-blue-600 hover:bg-blue-800 hover:text-gray-300 text-white font-bold text-4xl py-2 px-4 rounded"
