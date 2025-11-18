@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla DOM</title>
   </head>
-  <body>
-    <div id="app"></div>
+  <body
+    class="flex flex-col items-center justify-center h-screen gap-4 bg-gray-400"
+  >
     <script type="module" src="/src/main.js"></script>
     <button
-      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      class="bg-blue-600 hover:bg-blue-800 hover:text-gray-300 text-white font-bold text-4xl py-2 px-4 rounded"
       id="randomStudentButton"
     >
       Random Student
     </button>
-    <p class="text-xl font-bold" id="selectedStudent">Selected Student:</p>
+    <p class="text-xl font-bold" id="selectedStudent">
+      Click button to select a random student!
+    </p>
   </body>
 </html>
