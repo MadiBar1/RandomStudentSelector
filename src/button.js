@@ -4,7 +4,10 @@ import getStudents from "./students.js";
 const button = document.getElementById("randomStudentButton");
 
 button.addEventListener("click", () => {
- const randomStudent = 
+  const randomStudent =
+    getStudents()[getRandomIntInclusive(0, getStudents().length - 1)];
+  const selectedStudentId = document.getElementById("selectedStudent");
+  selectedStudentId.textContent = `Selected Student: ${randomStudent.Name}`;
 });
 
 function getRandomIntInclusive(min, max) {
